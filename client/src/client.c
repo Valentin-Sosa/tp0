@@ -106,6 +106,7 @@ void paquete(int conexion)
 	}
 
 	// ¡No te olvides de liberar las líneas y el paquete antes de regresar!
+	free(leido);
 	enviar_paquete(paquete, conexion);
 	eliminar_paquete(paquete);
 }
