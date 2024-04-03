@@ -100,7 +100,6 @@ void paquete(int conexion)
 	leido = readline("> ");
 	while(strcmp(leido,""))
 	{
-		log_info(logger, leido);
 		agregar_a_paquete(paquete,leido,strlen(leido)+1);
 		free(leido);
 		leido = readline("> ");
